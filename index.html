@@ -6,47 +6,129 @@
     <meta name="author" content="Kevin Mejia">
     <meta name="description" content="Desarrollador Backend en .NET">
     <meta name="keywords" content="Desarrollador web, c#, .net, asp.net core, backend, full stack">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
     <title>Kevin Mejia - Curriculum Vitae</title>
 </head>
 <body>
     <header>
-        <h1>Kevin Santiago Mejia Parra</h1>
+        <h1>Curriculum - Kevin Santiago Mejia Parra</h1>
         <p>Desarrollador Backend en .NET | kesameji@espol.edu.ec</p>
     </header>
     <nav>
-        <ul>
+        <ol>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
+            <li><a href="#Mapa">Mapa</a></li>
+        </ol>
     </nav>
     <main>
         <section id="resumen">
             <h2>Resumen</h2>
-            <p>Hola jeje.</p>
+            <div>
+                <p>sabes cual fue el ultimo animal en ser creado?</p>
+                <p>el del<b>fin.</b></p>
+                <p><i>risas</i></p>
+            </div>            
+            <img src="https://placehold.co/600x400" alt="Yo">
         </section>
         <section id="experiencia">
-            <h2>Nula</h2>
+            <h2>Experiencia</h2>
+            <p>Nula</p>
         </section>
         <section id="educacion">
-            <h2>Escuela Superior Politecnica del Litoral</h2>
+            <h2>Educación</h2>
+            <table border="3px">
+                <thead>
+                    <tr>
+                        <th>Institucion</th>
+                        <th>Carrera</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ANAI</td>
+                        <td>Bachillerato tecnico en informatica</td>
+                        <td>2019-2021</td>
+                    </tr>
+                    <tr>
+                        <td>ESPOL</td>
+                        <td>Ingenieria en Computacion</td>
+                        <td>2022-</td>
+                    </tr>
+                </tbody>                
+            </table>
         </section>
         <section id="habilidades">
-            <h2>Resolucion de problema</h2>
+            <h2>Habilidades</h2>
+            <ol>
+                <li>Aprendisaje rapido</li>
+                <li>Resolucion de problemas</li>
+                <li>Trabajo en equipo</li>
+                <li>Comunicacion acertiva</li>
+            </ol>
+            <p></p>
         </section>
         <section id="proyectos">
-            <h2>WebAPI</h2>
+            <h2>Proyectos</h2>
+            <ul>
+                <li>WebAPI</li>
+                <li>Desktop App</li>
+                <li>Console App</li>
+                <li>Web App</li>
+            </ul>
+        </section>
+        <section id="Contacto">
+            <form>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="experiencia">Experiencia Laboral:</label>
+                <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
+                <label for="educacion">Educación:</label>
+                <textarea id="educacion" name="educacion" rows="5" required></textarea>
+                <label>Habilidades Técnicas:</label>
+                <input type="checkbox" name="habilidades" value="HTML"> HTML
+                <input type="checkbox" name="habilidades" value="CSS"> CSS
+                <input type="checkbox" name="habilidades" value="JavaScript"> JavaScript
+                <label for="intereses">Intereses:</label>
+                <select id="intereses" name="intereses">
+                    <option value="desarrollo">Desarrollo Web</option>
+                    <option value="diseno">Diseño Gráfico</option>
+                    <option value="marketing">Marketing Digital</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>© Kevin Mejia - 2024</p>
         <ul>
-            <li><a
-            href="https://www.linkedin.com/in/ksmejia">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/ksmejia">LinkedIn</a></li>
             <li><a href="https://github.com/kesameji/">GitHub</a></li>
         </ul>
     </footer>
+    <section id="Mapa">
+        <h2>Mapa</h2>
+        <div id="map"></div>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+            var map = L.map('map').setView([51.505, -0.09], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+            L.marker([51.5, -0.09]).addTo(map);
+        </script>
+    </section>
     </body>
 </html>
