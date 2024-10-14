@@ -1,0 +1,89 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#photo {
+    width: 200px;
+    height: auto;
+}
+
+.subtitle {
+    color: rgb(107 114 128 / 0.89);
+    text-transform: uppercase;
+}
+
+section {
+    margin: 4px 2px 8px 2px;
+    border: 0.2pt solid #cedddd;
+    padding: 1.5% 0.8%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 30px;
+
+    -webkit-box-shadow: 9px 4px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 4px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 9px 4px 0px 0px rgba(0,0,0,0.75);
+}
+
+/*
+* {
+    background-color: #01041a;
+    color: #fdfdf2;
+    font-family: mukta;
+}
+
+h1, h2 {
+    color: #c732dc ;
+}
+
+.mukta-extralight {
+    font-family: "Mukta", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .mukta-light {
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .mukta-regular {
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .mukta-medium {
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .mukta-semibold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .mukta-bold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .mukta-extrabold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+*/
