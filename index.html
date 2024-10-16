@@ -23,27 +23,23 @@
 
 <body>
     <header>
-        <h1>Curriculum - Kevin Santiago Mejia Parra</h1>
-        <h2>Desarrollador Backend en .NET | kesameji@espol.edu.ec</h2>
+        <h1>Curriculum Vitae- Kevin Santiago Mejia Parra</h1>
+        <h2 class="subtitle">Desarrollador Backend en .NET | kesameji@espol.edu.ec | (+593) 998190546</h2>
     </header>
     <nav>
-        <ol>
+        <ul>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#Mapa">Mapa</a></li>
-        </ol>
+            </ol>
     </nav>
     <main>
         <section id="resumen">
             <h2 class="subtitle">Resumen</h2>
-            <div>
-                <p>sabes cual fue el ultimo animal en ser creado?</p>
-                <p>el del<b>fin.</b></p>
-                <p><i>risas</i></p>
-            </div>
+            <p>*Se describe*</p>
             <img id="photo" src="https://placehold.co/600x400" alt="Yo">
         </section>
         <section id="experiencia">
@@ -112,11 +108,11 @@
                     <textarea id="educacion" name="educacion" rows="5" required></textarea>
                 </div>
                 <div>
-                <label>Habilidades Técnicas:</label>
-                <input type="checkbox" name="habilidades" value="HTML"> HTML
-                <input type="checkbox" name="habilidades" value="CSS"> CSS
-                <input type="checkbox" name="habilidades" value="JavaScript"> JavaScript
-               </div>
+                    <label>Habilidades Técnicas:</label>
+                    <input type="checkbox" name="habilidades" value="HTML"> HTML
+                    <input type="checkbox" name="habilidades" value="CSS"> CSS
+                    <input type="checkbox" name="habilidades" value="JavaScript"> JavaScript
+                </div>
                 <div>
                     <label for="intereses">Intereses:</label>
                     <select id="intereses" name="intereses">
@@ -128,6 +124,18 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
+        <section id="Mapa">
+            <h2 class="subtitle">Mapa</h2>
+            <div id="map"></div>
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            <script>
+                var map = L.map('map').setView([51.505, -0.09], 13);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                }).addTo(map);
+                L.marker([51.5, -0.09]).addTo(map);
+            </script>
+        </section>
     </main>
     <footer>
         <p>© Kevin Mejia - 2024</p>
@@ -136,18 +144,7 @@
             <li><a href="https://github.com/kesameji/">GitHub</a></li>
         </ul>
     </footer>
-    <section id="Mapa">
-        <h2 class="subtitle">Mapa</h2>
-        <div id="map"></div>
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-        <script>
-            var map = L.map('map').setView([51.505, -0.09], 13);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-            }).addTo(map);
-            L.marker([51.5, -0.09]).addTo(map);
-        </script>
-    </section>
+
 </body>
 
 </html>

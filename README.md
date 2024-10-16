@@ -5,6 +5,8 @@ titles frank ruhl libre
 content ek mukta
 
 ### Pallete
-primary #03082b 
-secondary #c732dc
-content #fdfdf2
+background ##16161a
+title #fffffe 
+button #7f5af0
+button text #fffffe
+content #94a1b2
